@@ -1,0 +1,151 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(45deg, rgb(255, 72, 0), rgba(255, 208, 0, 0.979));
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.imagem img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.candidato {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: 3px solid #f76c1e;
+    padding: 20px;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -14px;
+    font-size: 12px;
+    color: #f76c1e;
+}
+
+#ano_nascimento {
+    color: rgba(0, 0, 0, 0.596);
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.dateNas {
+    color: black;
+    margin-bottom: 10px;
+}
+
+#button-submit {
+    background-color: #f76c1e;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+       
+   
+}
+
+#button-submit:hover {
+    /* background-color: #a34915; */
+    font-size: 1.5rem;
+    text-decoration: underline;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitle {
+    margin: 5px 0 0 0;
+}
+/*efeito de transição*/
+.fade-out{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Link para voltar para login */
+#link-login{
+    text-decoration: none;
+    text-align: center;
+    width: 100%; 
+    font-size: 1.1rem;
+    /* border: 2px solid red; */
+    
+}
+#div-home{
+
+    width: 100%; 
+    display: flex;
+
+
+}
+ #link-login:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+ }
+
+ #link-login:visited{
+    color: black;
+ }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil da Empresa</title>
+    <link rel="stylesheet" href="empresa.css">
+</head>
+<body>
+
+    <div class="container">
+    
+        <section class="empresa">
+            <h2>Perfil da Empresa</h2>
+            <div class="card">
+                <p><strong>Nome:</strong> Tech Solutions LTDA</p>
+                <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
+                <p><strong>Endereço:</strong> Rua Inovação, 123 - São Paulo, SP</p>
+                <p><strong>Email:</strong> contato@techsolutions.com</p>
+                <p><strong>Telefone:</strong> (11) 4002-8922</p>
+                <p class="descricao">Empresa especializada em soluções tecnológicas para educação e mercado corporativo.</p>
+            </div>
+        </section>
+
+        <section class="vagas">
+            <h2>Vagas da Empresa</h2>
+            <div class="vagas-lista">
+                <div class="vaga-card">
+                    <h3>Desenvolvedor Front-End</h3>
+                    <p><strong>Requisitos:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Local:</strong> Remoto</p>
+                    <button onclick="verDetalhes('Desenvolvedor Front-End')">Ver Detalhes</button>
+                </div>
+
+                <div class="vaga-card">
+                    <h3>Analista de Dados</h3>
+                    <p><strong>Requisitos:</strong> Python, SQL, Power BI</p>
+                    <p><strong>Local:</strong> São Paulo</p>
+                    <button onclick="verDetalhes('Analista de Dados')">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="empresa">
+            <h2>Perfil da Empresa</h2>
+            <div class="card">
+                <p><strong>Nome:</strong> OrangeTech Solutions</p>
+                <p><strong>CNPJ:</strong> 98.765.432/0001-55</p>
+                <p><strong>Endereço:</strong> Avenida Tecnologia, 456 - Rio de Janeiro, RJ</p>
+                <p><strong>Email:</strong> contato@orangetech.com</p>
+                <p><strong>Telefone:</strong> (21) 98888-7766</p>
+                <p class="descricao">Consultoria especializada em transformação digital e desenvolvimento de software.</p>
+            </div>
+        </section>
+
+        <section class="vagas">
+            <h2>Vagas da Empresa</h2>
+            <div class="vagas-lista">
+                <div class="vaga-card">
+                    <h3>UX/UI Designer</h3>
+                    <p><strong>Requisitos:</strong> Figma, Design Thinking, Prototipagem</p>
+                    <p><strong>Local:</strong> Remoto</p>
+                    <button onclick="verDetalhes('UX/UI Designer')">Ver Detalhes</button>
+                </div>
+
+                <div class="vaga-card">
+                    <h3>Desenvolvedor Back-End</h3>
+                    <p><strong>Requisitos:</strong> Node.js, MongoDB, API REST</p>
+                    <p><strong>Local:</strong> Rio de Janeiro</p>
+                    <button onclick="verDetalhes('Desenvolvedor Back-End')">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="empresa.js"></script>
+</body>
+</html>

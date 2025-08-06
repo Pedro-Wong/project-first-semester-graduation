@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login/style_login.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <title>Puc Carreiras - Login</title>
+</head>
+
+<body>
+    <figure>
+        <img src="assets/img/logoPucCarreira.png" alt="Logo PUC Carreira">
+    </figure>
+    <form class="container">
+        <div class = "div-login">
+            <div>
+                <h1>Login</h1>
+            </div>
+        </div>
+        <div class = "div-login">
+            <div>
+                <label id="NomeLabel" for="Nome_login">Nome: </label>
+                <input type="text" id="Nome_login" placeholder="Nome" />
+            </div>
+        </div>
+        <div class = "div-login">
+            <div>
+                <label id="senhaLabel" for="senha_login">Senha: </label>
+                <input type="password" id="senha_login" placeholder="Senha" />
+            </div>
+        </div>
+        <div class = "div-login">
+            <div>
+                <button id="login-button">Logar</button>
+            </div>
+        </div>
+        <div id="div-link">
+            <a id="link-cadastro" href="cadastro_login/cadastro_login.html">Cadastre-se</a>
+        </div>
+        <div id="msgError" style="display:none;color:red;">login não encontrado</div>
+    </form>
+    <script src="login/login.js"></script>
+</body>
+
+</html>

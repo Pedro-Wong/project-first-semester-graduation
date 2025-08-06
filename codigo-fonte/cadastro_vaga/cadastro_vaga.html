@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUC Carreiras - Cadastro de Vaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <a href="../index.html">
+      <img src="../assets/img/logoPucCarreira.png" alt="Logo PUC Carreiras" class="logo" />
+    </a>
+    <h1>Cadastro de Vaga</h1>
+    <p class="subtitle">Descreva sobre a vaga de emprego</p>
+    <form id="vaga-form">
+      <div class="row">
+        <input type="text" placeholder="Título da vaga" name="titulo" required />
+        <select name="tipo">
+          <option disabled selected>Tipo de emprego</option>
+          <option value="clt">CLT</option>
+          <option value="estagio">Estágio</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="pj">PJ</option>
+          <option value="temporario">Temporário</option>
+        </select>
+        <input type="number" placeholder="Número de vagas" name="quantidade" required />
+      </div>
+      <div id="category-div">
+        <!-- <input type="text" placeholder="Experiência exigida" name="experiencia" /> -->
+         <label for="cadastro-categoria">Experiência: </label>
+         <select name="experiencia" id="experiencia-categoria">
+            <option value="senior">Sênior</option>
+            <option value="pleno">Pleno</option>
+            <option value="junior">Junior</option>  
+        </select>
+        <label for="cadastro-categoria">Categoria: </label>
+        <select name="categoria" id="cadastro-categoria">
+            <option value="backend">Back-end</option>
+            <option value="frontend">Front-end</option>
+            <option value="uxui">UX e UI</option>
+            <option value="banco">Banco de dados</option>
+            <option value="redes">Redes</option>
+        </select>
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Salário" name="salario" />
+        <input type="text" placeholder="Comissão" name="comissao" />
+        <select name="modalidade">
+          <option disabled selected>Modalidade</option>
+          <option value="presencial">Presencial</option>
+          <option value="remoto">Remoto</option>
+          <option value="hibrido">Híbrido</option>
+        </select>
+      </div>
+      <textarea name="descricao" placeholder="Descrição da Vaga" rows="5"></textarea>
+      <button type="submit">CADASTRAR VAGA</button>
+      <button type="submit" id="button-home">HOME</button>
+     
+    </form>
+    <div id="vagas-list"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

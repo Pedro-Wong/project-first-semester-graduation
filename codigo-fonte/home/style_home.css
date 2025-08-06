@@ -1,0 +1,231 @@
+/* Formatacao global da pagina */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    
+ }
+ /* fonte de paragrafo */
+ /* font-family: "Open Sans", sans-serif; */
+ body{
+   font-family: "Roboto", sans-serif;
+  
+  
+}
+/* HEADER */
+ header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    width: 100vw;
+    height: 9vh;
+ }
+
+ .header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 20vw;
+ }
+/* Imagem logo header */
+ .header-logo a img{
+    width: 12vw; 
+    height: 6.5vh;
+    margin: auto;
+ }
+
+ nav{
+    /* border: 2px solid black; */
+    width: 60vw;
+ }
+
+ .header-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem ;
+   
+ }
+
+ .link-style{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 4px;
+ }
+.link-style:hover{
+  color: #007bff;
+}
+ .header-config{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 20vw;
+ }
+
+
+/* MAIN */
+
+main{
+  /* border: 2px solid orange;  */
+  width: 100vw; 
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.iframe-style{
+  width: 90%;
+  height: 97%;
+  border-radius: 10px;
+  border: 0.5px solid black;
+}
+
+
+/* Rodape */
+ footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green;  */
+    width: 100vw; 
+    height: 8vh;
+    background-color: #404040 ;
+ }
+ footer p{
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+ }
+
+   /* FORMATACAO MODAL */
+  .modal-img {
+    width: 3vw;
+    height: 4vh; 
+  }
+/* button imagem que abre o modal */
+  .modal-button{
+   
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+/* botao de fechar o modal */
+  .modal-close {
+    position: absolute;
+    top: 1%;
+    right: 1.2%;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+/* background fora do modal */
+  dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+  }
+  /* Estilizacao do box Modal 2 e 3 */
+  .modal{
+    width: 30vw;
+    height: 80vh;
+    border: none;
+    border-radius: 5px; 
+    position: fixed; /* necessário para centralizar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* remove margem padrão do dialog */
+    background: white;
+    padding: 1rem;
+    z-index: 1; /* garante que fique acima de tudo */
+    
+  }
+  /* estilização modal barra de busca */
+  .modal-style1{
+    width: 45vw;
+    height: 12vh;
+    border: none;
+    border-radius: 5px; 
+    position: fixed; /* necessário para centralizar */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* remove margem padrão do dialog */
+    background: white;
+    padding: 1rem;
+    z-index: 1; /* garante que fique acima de tudo */
+  }
+
+/* estilizacao barra de busca modal 1 */
+#barra-busca-style{
+  /* border: 2px solid black; */
+  width: 96%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   font-family: "Open Sans", sans-serif;
+}
+
+#barra-busca-style input{
+  width: 75%;
+  height: 63%;
+  margin-left: 1%;
+  border-radius: 5px;
+  border: 0.3px solid lightgray;
+  padding: 1%;
+  font-size: 1.3rem;
+  
+}
+#barra-busca-style input:focus{
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+
+#barra-busca-style label{
+  font-size: 1.6rem;
+}
+
+#barra-busca-style:hover{
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+/* Estilização modal2 */
+
+.config-style{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid yellow;
+}
+
+.divform-style{
+  display: flex;
+  align-items: center;
+  height: 50%;
+  border: 2px solid green;
+}
+
+.formbutton-style {
+  display: flex;
+  justify-self: center;
+}
+  /* MEDIA QUERIES HOME*/
+
+  /* @media screen and (max-width: 320px) { 
+
+    body{
+     
+    }
+  } */

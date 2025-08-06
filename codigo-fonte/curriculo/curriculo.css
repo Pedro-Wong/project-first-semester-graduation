@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+/* font-family: "Open Sans", sans-serif; */
+h1{
+    font-size: 1.6rem;
+    margin: 1%;
+}
+#form-curriculo{
+    margin: 0.5%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+fieldset input{
+    width: 30%;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+fieldset select{
+     width: 30%;
+     border-radius: 5px;
+     
+}
+
+legend{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+button{
+    display: block;
+    justify-self: center;
+    width: 28%;
+    height: 25%;
+}

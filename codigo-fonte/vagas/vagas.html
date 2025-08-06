@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_vagas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>vagas</title>
+</head>
+
+<body>
+    <header>
+        <h1>PAINEL DE VAGAS</h1>
+    </header>
+    <main class="card-main">
+        <div id="empty-div">
+
+        </div>
+
+
+        <!-- filtro -->
+        <div id="section-filter">
+
+            <form id="form-filter">
+                <div>
+                    <!-- <h2>Filtrar vaga</h2> -->
+                </div>
+                <div class="input-text">
+                    <h4>Título da vaga: </h4>
+                    <!-- <label for="titulo-filter">Título da vaga:</label> -->
+                    <input type="text" name="titulo-vaga" id="titulo-filter" />
+                </div>
+                <div class="input-text">
+                    <h4>Salário: </h4>
+                    <!-- <label for="titulo-filter">Título da vaga:</label> -->
+                    <input type="number" name="salario-vaga" id="salario-filter" />
+                </div>
+                <div>
+                    <!-- <label for="categoria-filter">Categoria: </label> -->
+                    <h4>Categoria: </h4>
+                    <select name="selecao-categoria" id="categoria-filter">
+                        <option value="backend">Back-end</option>
+                        <option value="frontend">Front-end</option>
+                        <option value="uxui">UX e UI</option>
+                        <option value="banco">Banco de dados</option>
+                        <option value="redes">Redes</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Tipo de vaga: </legend>
+                    <div class="div-filter" id="filter-tipo">
+                        <label for="clt-filter">CLT:</label>
+                        <input type="radio" id="clt-filter" name="tipo" value="clt">
+
+                        <label for="pj-filter">PJ: </label>
+                        <input type="radio" id="pj-filter" name="tipo" value="pj">
+
+                        <label for="estagio-filter">Estágio: </label>
+                        <input type="radio" id="estagio-filter" name="tipo" value="estagio">
+
+                        <label for="temporario-filter">Temporário:</label>
+                        <input type="radio" id="temporario-filter" name="tipo" value="temporario">
+
+                        <label for="freelancer-filter">Freelancer:</label>
+                        <input type="radio" id="freelancer-filter" name="tipo" value="freelancer">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Modalidade: </legend>
+                    <div class="div-filter" id="modalidade-filter">
+                        <label for="presencial-filter">Presencial: </label>
+                        <input type="radio" id="presencial-filter" name="modalidade" value="presencial">
+
+                        <label for="remoto-filter">Remoto: </label>
+                        <input type="radio" id="remoto-filter" name="modalidade" value="remoto">
+
+                        <label for="hibrido-filter">Híbrido: </label>
+                        <input type="radio" id="hibrido-filter" name="modalidade" value="hibrido">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Experiência: </legend>
+                    <div class="div-filter" id="experiencia-filter">
+                        <label for="junior-filter">Júnior: </label>
+                        <input type="radio" id="junior-filter" name="experiencia" value="junior">
+
+                        <label for="pleno-filter">Pleno: </label>
+                        <input type="radio" id="pleno-filter" name="experiencia" value="pleno">
+
+                        <label for="senior-filter">Sênior: </label>
+                        <input type="radio" id="senior-filter" name="experiencia" value="senior">
+                    </div>
+                </fieldset>
+                <div class="button-style">
+                    <button id="button-filtro">Limpar filtro</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="section-card" id="card-container">
+           <!-- Conteudo preenchido por JS-->
+        </div>
+
+    </main>
+    <footer>
+
+        <a href="../cadastro_vaga/cadastro_vaga.html" target="_blank">Cadastro de vagas</a>
+
+    </footer>
+    <script src="vagas.js"></script>
+</body>
+
+</html>

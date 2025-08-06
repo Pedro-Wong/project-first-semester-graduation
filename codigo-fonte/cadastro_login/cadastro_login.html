@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUC Carreiras - Cadastro do candidato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" />   
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="imagem">
+            <a href="../login/login.html">
+                <img src="../assets/img/logoPucCarreira.png" alt="logo PUC Carreiras" id="logo">
+            </a>
+        </div>
+
+        <div class="candidato">
+            <h1>Cadastro do candidato</h1>
+            <p class="subtitle"><b>Aproveite sua vida profissional ao máximo</b></p>
+        </div>
+
+        <div class="box">
+            <form method="post" >
+                <fieldset>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" maxlength="70" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" maxlength="30" required>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="cpf" id="cpf" class="inputUser" maxlength="11" required>
+                        <label for="cpf" class="labelInput">CPF</label>
+                    </div>
+                    <br>
+                    <div class="dateNas">
+                        <label for="ano_nascimento"><b>Data de nascimento:</b></label>
+                        <input type="date" name="ano_nascimento" id="ano_nascimento">
+                    </div>
+                    <br>
+                    <div class="dateNas"><b>Sexo</b></div>
+                    <br>
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <br>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="password" name="password" id="password" class="inputUser" required>
+                        <label for="password" class="labelInput">Senha</label>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <input type="password" name="confirm_password" id="confirm_password" class="inputUser" required>
+                        <label for="confirm_password" class="labelInput">Confirmar senha</label>
+                    </div>
+                    <br>
+                    <button  name="submit" id="button-submit" >Enviar</button>
+                    <div id="div-home">
+
+                        <a href="../index.html" id="link-login">Login</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripit.js"></script>
+</body>
+
+</html>

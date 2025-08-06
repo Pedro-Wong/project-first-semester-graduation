@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>PUC Carreiras</title>
+</head>
+<body>
+    <header>
+        <figure class="header-logo">
+           <a href="#"><img src="../assets/img/logoPucCarreira.png" alt="Logo puc carreiras" /></a>
+        </figure>
+        <nav class="header-nav">
+                <div><a href="../dashboard/dashboard.html" target="conteudo-iframe" class="link-style">DashBoard</a></div>
+                <div><a href="../vagas/vagas.html" target="conteudo-iframe" class="link-style">Vagas</a></div>
+                <div><a href="../empresas/empresas.html" target="conteudo-iframe" class="link-style">Empresas</a></div>
+                <div><a href="../curriculo/curriculo.html" target="conteudo-iframe" class="link-style">Currículo</a></div>
+                <div><a href="../index.html" target="_blank" class="link-style">Login</a></div>   
+        </nav>
+        <!-- <figure class="header-config">
+            <button class="modal-button1 modal-button">
+                <img class="modal-img" src="assets/img/lupa.png" />
+            </button>
+            <button class="modal-button2 modal-button">
+                <img class="modal-img" src="assets/img/usuario.png"/>
+            </button>
+            <button class="modal-button3 modal-button">
+                <img class="modal-img" src="assets/img/engrenagem.png"/>
+            </button>
+        </figure>   -->
+    </header >
+    <main>  
+        <iframe name="conteudo-iframe" class="iframe-style" src="../dashboard/dashboard.html"></iframe>
+    </main>
+    <footer >
+        <p>Puc carreiras &copy;</p>
+    </footer>
+    
+    <!-- MODAIS -->
+
+      <!-- Primeiro modal -->
+
+      <dialog class="modal1 modal-style1">
+          <span class="modal-close1 modal-close">&times;</span>
+          <div id="barra-busca-style">
+                <label for="barra-busca">Buscar:</label>
+                <input type="search" name="barra-busca" id="barra-busca" placeholder="Buscar na página..."/>
+          </div>
+      </dialog>
+
+
+
+
+
+      <!-- Segundo modal -->
+      <dialog class="modal2 modal">
+          <span class="modal-close2 modal-close">&times;</span>
+          <h2>Alteração de dados</h2>
+          <div class="divform-style">
+            <form class="config-style">          
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome"/> 
+                         
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="example@gmail.com"/> 
+              
+                    <label for="curso">Curso: </label>
+                    <input type="text" id="curso"/>
+                           
+                    <label for="faculdade">Faculdade: </label>
+                    <input type="text" id="faculdade"/> 
+                         
+                    <label for="linkedin">Linkedin: </label>
+                    <input type="text" id="linkedin"/> 
+                          
+                    <label for="portfolio">Portfolio: </label>
+                    <input type="text" id="portfolio"/>  
+            </form>
+          </div>
+        <button class=" formbutton-style">meu botao</button>
+      </dialog>
+      <!-- Terceiro modal -->
+      <dialog class="modal3 modal">
+        <div>
+            <span class="modal-close3 modal-close">&times;</span>
+            <h2>Meu modal 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, soluta deserunt. Blanditiis sequi perspiciatis dignissimos ipsum repellendus, voluptate iure in, aliquid nihil neque velit ullam asperiores ab ea? Earum, sunt.</p>
+        </div>
+      </dialog>
+    <script src="home.js"></script>
+</body>
+</html>

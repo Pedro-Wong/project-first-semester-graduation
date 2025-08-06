@@ -1,0 +1,94 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f76c1e;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 55%;
+    margin: 0 auto;
+  }
+  
+  textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .row input, .row select {
+    flex: 1;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #vagas-list {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+
+  #category-div{
+    display: flex;
+    align-items: center;
+  }
+  #category-div input{
+    width: 42.5%;
+    margin: 1%;
+  }
+  #category-div label{
+    width: 15%;
+    font-weight: bold;
+  }
+  #category-div select{
+    width: 42.5%;
+  }

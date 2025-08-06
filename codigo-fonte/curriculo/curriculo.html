@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="curriculo.css">
+  <title>Puc Carreiras - Cadastro de Currículo</title>
+  
+</head>
+<body>
+  <h1>Cadastro de currículo</h1>
+  <form id="form-curriculo">
+  <!-- DADOS PESSOAIS -->
+  <fieldset id="dados-pessoais" class="fieldset-style">
+    <legend>Dados Pessoais</legend>
+
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required><br>
+
+    <label for="data_nascimento">Data de nascimento:</label>
+    <input type="date" id="data_nascimento" name="data_nascimento"><br>
+
+    <label for="genero">Gênero:</label>
+    <select id="genero" name="genero">
+      <option value="">Selecione</option>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="outro">Outro</option>
+    </select><br>
+
+    <label for="estado_civil">Estado civil:</label>
+    <input type="text" id="estado_civil" name="estado_civil"><br>
+  </fieldset>
+
+  <!-- CONTATO -->
+  <fieldset id="contato" class="fieldset-style">
+    <legend>Contato</legend>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="telefone">Telefone/WhatsApp:</label>
+    <input type="tel" id="telefone" name="telefone"><br>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade"><br>
+
+    <label for="linkedin">LinkedIn:</label>
+    <input type="url" id="linkedin" name="linkedin"><br>
+
+    <label for="portfolio">Portfólio (GitHub/Behance):</label>
+    <input type="url" id="portfolio" name="portfolio">
+  </fieldset>
+
+  <!-- OBJETIVO -->
+  <fieldset id="objetivo" class="fieldset-style">
+    <legend>Objetivo Profissional</legend>
+
+    <label for="cargo">Cargo desejado:</label>
+    <input type="text" id="cargo" name="cargo"><br>
+
+    <label for="tipo_vaga">Tipo de vaga:</label>
+    <select id="tipo_vaga" name="tipo_vaga">
+      <option value="">Selecione</option>
+      <option value="clt">CLT</option>
+      <option value="estagio">Estágio</option>
+      <option value="freelance">Freelance</option>
+    </select>
+  </fieldset>
+
+  <!-- FORMAÇÃO -->
+  <fieldset id="Formação" class="fieldset-style">
+    <legend>Formação Acadêmica</legend>
+
+    <label for="instituicao">Instituição:</label>
+    <input type="text" id="instituicao" name="instituicao"><br>
+
+    <label for="curso">Curso:</label>
+    <input type="text" id="curso" name="curso"><br>
+
+    <label for="status_curso">Status:</label>
+    <select id="status_curso" name="status_curso">
+      <option value="">Selecione</option>
+      <option value="concluido">Concluído</option>
+      <option value="cursando">Cursando</option>
+    </select>
+  </fieldset>
+
+  <!-- EXPERIÊNCIA -->
+  <fieldset id="experiencia" class="fieldset-style">
+    <legend>Experiência Profissional</legend>
+
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" name="empresa"><br>
+
+    <label for="cargo_experiencia">Cargo ocupado:</label>
+    <input type="text" id="cargo_experiencia" name="cargo_experiencia"><br>
+
+    <label for="periodo">Período:</label>
+    <input type="text" id="periodo" name="periodo"><br>
+
+    <label for="atividades">Atividades desenvolvidas:</label><br>
+    <textarea id="atividades" name="atividades" rows="4" cols="50"></textarea>
+  </fieldset>
+
+  <!-- CURSOS E HABILIDADES -->
+  <fieldset id="cursos-habilidades" class="fieldset-style">
+    <legend>Cursos e Habilidades</legend>
+
+    <label for="cursos">Cursos complementares:</label><br>
+    <textarea id="cursos" name="cursos" rows="3" cols="50"></textarea><br>
+
+    <label for="habilidades">Habilidades técnicas e comportamentais:</label><br>
+    <textarea id="habilidades" name="habilidades" rows="3" cols="50"></textarea>
+  </fieldset>
+
+  <!-- IDIOMAS -->
+  <fieldset id="idiomas" class="fieldset-style">
+    <legend>Idiomas</legend>
+
+    <label for="idioma">Idioma:</label>
+    <input type="text" id="idioma" name="idioma"><br>
+
+    <label for="nivel_idioma">Nível:</label>
+    <select id="nivel_idioma" name="nivel_idioma">
+      <option value="">Selecione</option>
+      <option value="basico">Básico</option>
+      <option value="intermediario">Intermediário</option>
+      <option value="avancado">Avançado</option>
+      <option value="fluente">Fluente</option>
+    </select>
+  </fieldset>
+
+  <!-- BOTÃO -->
+  <br>
+  <button type="submit" id="button-curriculo">Salvar Currículo</button>
+</form>
+<!-- atributo defer espera o DOM inicializar antes de rodar o script -->
+<script src="curriculo.js" defer></script>
+</body>
+</html>
