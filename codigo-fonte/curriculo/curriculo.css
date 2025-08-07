@@ -16,6 +16,7 @@ h1{
 
 fieldset{
     display: flex;
+    margin-bottom: 0.8rem;
     flex-direction: column;
     padding: 12px;
 }
@@ -40,6 +41,31 @@ legend{
 button{
     display: block;
     justify-self: center;
-    width: 28%;
+    width: 20%;
     height: 25%;
+}
+
+#file-update{
+    display: none;
+}
+
+#section-button{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    
+}
+
+#section-button button{
+    border-radius: 5px;
+    border-width: none;
+    cursor: pointer;
+}
+
+#nome-arquivo{
+    display: inline-block;
+    /* border: 2px solid blue; */
+    width: 100%;
+    text-align: center;
+   
 }

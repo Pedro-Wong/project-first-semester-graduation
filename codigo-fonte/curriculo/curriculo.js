@@ -1,4 +1,4 @@
-const form = document.getElementById("form-curriculo");
+// const form = document.getElementById("form-curriculo");
 let curriculo = {};
 let curriculoLocalStorage = JSON.parse(localStorage.getItem("curriculo")) || [];
 
@@ -26,7 +26,14 @@ let habilidades = document.getElementById("habilidades"); // transforma em array
 let idioma = document.getElementById("idioma");
 let nivel = document.getElementById("nivel_idioma");
 
-form.addEventListener("submit", function (event) {
+//botoes de envio do curriculo e envio de arquivo
+let buttonCurriculo = document.getElementById("button-curriculo");
+
+let inputAnexo = document.getElementById("file-update");
+let buttonAnexoCurriculo = document.getElementById("button-anexo");
+let nomeArquivo = document.getElementById("nome-arquivo");
+
+buttonCurriculo.addEventListener("click", function (event) {
     event.preventDefault();
 
     curriculo = {
@@ -55,12 +62,12 @@ form.addEventListener("submit", function (event) {
     };
 
     console.log("Dados do currículo:", curriculo);
-    curriculoLocalStorage[0] = curriculo
-    
+    curriculoLocalStorage[0] = curriculo;
+
     localStorage.setItem("curriculo", JSON.stringify(curriculoLocalStorage));
 
 
-    alert("Currículo salvo com sucesso!");
+    alert("Dados salvos nos campos!");
 
 });
 
@@ -92,4 +99,35 @@ window.addEventListener("DOMContentLoaded", () => {
 
 })
 
+// funcoes extras 
 
+//abrir input para enviar curriculo 
+buttonAnexoCurriculo.addEventListener("click", (event) => {
+    event.preventDefault();
+    inputAnexo.click();
+
+})
+
+//logica do input para pegar o arquivo a ser anexado
+inputAnexo.addEventListener("change", (event) => {
+    console.log(event);
+
+    const arquivo = event.target.files[0];
+
+    if (arquivo) {
+        nomeArquivo.textContent = `📎 ${arquivo.name}`;
+        nomeArquivo.classList.add('arquivo-selecionado');
+
+        // Log para debug
+        // console.log('Arquivo selecionado:', {
+        //     nome: arquivo.name,
+        //     tamanho: (arquivo.size / 1024 / 1024).toFixed(2) + ' MB',
+        //     tipo: arquivo.type
+        // });
+
+    } else {
+        nomeArquivo.textContent = "Nenhum arquivo selecionado";
+        nomeArquivo.classList.remove('arquivo-selecionado');
+
+    }
+})

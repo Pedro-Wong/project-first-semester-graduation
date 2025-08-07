@@ -36,3 +36,12 @@
 // }
 
 
+const logoutHome = document.getElementById("logout-home");
+
+//sair da página, versao muito simples
+logoutHome.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.replace("../index.html");
+})
+
+
