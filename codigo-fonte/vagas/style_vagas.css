@@ -1,68 +1,71 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;   
- }
+    box-sizing: border-box;
+}
 
 
- /* font-family: "Open Sans", sans-serif; */
- /* font-family: "Roboto", sans-serif; */
- 
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
 
 /* formatacao geral  */
 li {
     list-style: none;
 }
 
-legend{
+legend {
     margin-bottom: 1%;
-    margin-top:1%;
+    margin-top: 1%;
     font-weight: bold;
 }
 
-label{
+label {
     margin-right: 2%;
     margin-left: 2%;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
-   
-    
+
+
 }
+
 /* cabecalho */
-header{
+header {
     height: 15%;
     /* border: 2px solid pink; */
     background-color: #949494;
     color: white;
     padding: 15px 20px;
-   
- }
+
+}
+
 /* corpo principal */
-main{
+main {
     display: flex;
     /* justify-content: center; */
     /* flex-wrap: wrap;
     justify-content: center; */
-    height: 60%; 
+    height: 60%;
     /* border: 1px solid blueviolet; */
- }
+}
 
 
 /* Gambiarra para empurrar a outra div  */
-#empty-div{
+#empty-div {
     /* border: 2px solid black; */
     width: 45vw;
-   
+
 }
 
 /* input de texto */
-.input-text{
+.input-text {
     width: 100%;
     height: 18%;
 }
 
-.input-text input{
+.input-text input {
     width: 70%;
     height: 4vh;
     font-size: 1rem;
@@ -72,27 +75,28 @@ main{
 }
 
 /* Filtro de vagas */
-#section-filter{
+#section-filter {
     /* border: 4px solid red; */
     margin: 1.4%;
     width: 40vw;
     height: 54vh;
     position: fixed;
     background-color: lightgray;
-    padding:1%;
+    padding: 1%;
     border-radius: 7px;
 }
+
 /* Div dos checkbox do filtro */
-.div-filter{
+.div-filter {
     display: flex;
-    
-    
+
+
 }
 
 
 
 /* botão do filtro e de candidatar*/
-.button-style{
+.button-style {
     display: flex;
     /* border: 2px solid blue; */
     justify-content: center;
@@ -101,9 +105,9 @@ main{
     text-align: center;
     margin: 4% 0;
 }
-.button-style button{
+
+.button-style button {
     width: 50%;
-    
     border-radius: 5px;
     border: none;
     background-color: #404040;
@@ -113,12 +117,12 @@ main{
     transition: background-color 0.4s ease;
 }
 
-.button-style button:hover{
+.button-style button:hover {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
     background-color: #e9b719;
-    color: black;   
+    color: black;
 }
 
 
@@ -131,7 +135,7 @@ main{
 
 
 /* Div dos cards de vagas */
-.section-card{
+.section-card {
     /* border: 4px solid orange; */
     width: 55vw;
     display: flex;
@@ -140,38 +144,72 @@ main{
 }
 
 /* Card de vagas */
- .card-style{
+.card-style {
     margin: 0.5%;
     padding: 0.4%;
     height: auto;
     width: 40vw;
-    border: 1px solid black;
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
- }
-
-#card-title{
-   text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 30vw;
 }
 
-.card-text{
-    display: inline;
-}
-
-.card-style div p{
+.card-style div p {
     font-size: 1.2rem;
 }
 
+.card-style:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+
+}
+
+.card-text {
+    display: inline;
+}
+
+#card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 3%;
+}
+
+#card-descricao {
+    background-color: #f7fafc;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    border-left: 4px solid black;
+
+}
 
 
 
+#card-categoria {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    /* margin-bottom: 20px; */
 
 
 
+}
 
 /* rodape */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,17 +219,17 @@ footer{
     background-color: #949494;
 }
 
-footer a{
+footer a {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
     color: black;
-    
+
 }
-footer a:hover{
+
+footer a:hover {
     background-color: #eeeeee;
     font-weight: bold;
 }
-

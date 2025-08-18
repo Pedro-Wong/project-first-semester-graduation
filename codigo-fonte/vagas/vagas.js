@@ -26,6 +26,7 @@ const displayData = data => {
                     <div>
                         <h3 id="card-title" id="card-titulo">${e.titulo}</h3>
                     </div>
+                   
                     <div>
                         <h3 class="card-text" >Tipo: </h3>
                         <p class="card-text" id="card-tipo">${e.tipo}</p>  
@@ -42,12 +43,11 @@ const displayData = data => {
                         <h3 class="card-text">Modalidade: </h3>
                         <p class="card-text" id="card-presencial">${e.modalidade}</p>
                     </div>
-                    <div>
-                        <h3>Descrição breve da vaga: </h3>
-                        <p id="card-descricao">${e.descricao}</p>
+                    <div id="card-descricao">
+                        <h3>Descrição: </h3>
+                        <p >${e.descricao}</p>
                     </div>
                     <div>
-                        <h3>Categoria: </h3>
                         <ul id="card-categoria">
                             <li>${e.categoria}</li>
                         </ul>
