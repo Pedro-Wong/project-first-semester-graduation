@@ -157,7 +157,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 -->
 #### Responsável
 
-<p>Ana Fonseca</p>
+<p>Pedro Henrique de Azevedo</p>
 
 <hr>
 
