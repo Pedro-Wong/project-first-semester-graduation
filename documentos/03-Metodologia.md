@@ -12,7 +12,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 <!--[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]-->
 - Scrum Master: Pedro Azevedo.
 - Product Owner: Welinton dos Reis Mainarte.
-- Equipe de Desenvolvimento: Gabriel Passos, Ana Júlia , Yasmin Pizol. 
+- Equipe de Desenvolvimento: Edilson Ferreira, Gabriel Passos, Pedro Azevedo, Welinton dos Reis Mainarte. 
 - Equipe de Design: Edilson Ferreira.
 <!-- Comentário, links sobre o scrum
 > **Links Úteis**:
