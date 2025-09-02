@@ -67,7 +67,7 @@ https://github.com/user-attachments/assets/6ae74b01-6ac6-471b-8d06-b658fa7c8729
 
 | Caso de Teste | Resultados do Teste | Responsável pela Execução do Caso de Teste | Nome do Responsável pelo Teste |
 |---------------|----------------------|---------------------------------------------|--------------------------------------|
-| CT-07 - Verificar envio de arquivos pela plataforma | Upload realizado com sucesso. Sistema confirmou o envio do arquivo anexado. | Ana | Edilson |
+| CT-07 - Verificar envio de arquivos pela plataforma | Upload realizado com sucesso. Sistema confirmou o envio do arquivo anexado. | Pedro | Edilson |
 
 ![curriculo](https://github.com/user-attachments/assets/5ec9dffd-5507-43ca-9a00-c6551c771182)
 
