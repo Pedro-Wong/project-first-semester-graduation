@@ -69,9 +69,9 @@ https://github.com/user-attachments/assets/6ae74b01-6ac6-471b-8d06-b658fa7c8729
 |---------------|----------------------|---------------------------------------------|--------------------------------------|
 | CT-07 - Verificar envio de arquivos pela plataforma | Upload realizado com sucesso. Sistema confirmou o envio do arquivo anexado. | Ana | Edilson |
 
-![image](https://github.com/user-attachments/assets/cb65590e-fbb1-4326-b695-d3a0f2a20a94)
+![curriculo](https://github.com/user-attachments/assets/5ec9dffd-5507-43ca-9a00-c6551c771182)
 
-https://github.com/user-attachments/assets/cd2771b8-f4c3-4333-8f2e-af0388ba0b75
+https://github.com/user-attachments/assets/abbbff40-05ea-4c10-a1eb-2e33d57c9be4
 
 <br></br>
 
